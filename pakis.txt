@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="75dp" />
+
+
+    <TextView
+        android:id="@+id/lastday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Day"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progbar1"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:min="50"
+            android:progress="100"
+            android:progressBackgroundTint="@color/blue_solar_detail"
+            android:progressDrawable="@drawable/seekbar_blue1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/progbar2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="High"
+            android:textColor="@color/blue_solar_detail"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar1"
+            />
+
+
+
+        <ProgressBar
+            android:id="@+id/progbar2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:min="40"
+            android:progress="80"
+            android:progressBackgroundTint="@color/blue_solar_detail"
+            android:progressDrawable="@drawable/seekbar_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progbar1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/progbar3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:text="Normal"
+            android:textSize="14sp"
+            android:textColor="@color/green_solar_detail"
+
+            app:layout_constraintLeft_toLeftOf="@+id/progbar2"
+             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/progbar3"
+
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+
+            android:max="100"
+            android:min="32"
+            android:progress="64"
+
+            android:progressBackgroundTint="@color/green_solar_detail"
+            android:progressDrawable="@drawable/seekbar_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progbar2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="low"
+            android:textSize="14sp"
+            android:textColor="@color/yellow_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar3"
+            />
+
+        <SeekBar
+            android:id="@+id/customSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:forceHasOverlappingRendering="true"
+            android:max="100"
+            android:maxHeight="6dp"
+            android:min="0"
+            android:minHeight="5dp"
+            android:progress="50"
+            android:progressBackgroundTint="@color/transparent"
+            android:progressDrawable="@color/transparent"
+
+
+            android:splitTrack="false"
+            android:thumb="@drawable/ic_progress_bar"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="percentage"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+            app:layout_constraintRight_toRightOf="@+id/constraintLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:text="50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+
+    <TextView
+        android:id="@+id/lastmonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Month"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout22"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ProgressBar
+            android:id="@+id/progbar122"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:min="50"
+            android:progress="100"
+            android:progressBackgroundTint="@color/blue_solar_detail"
+            android:progressDrawable="@drawable/seekbar_blue1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/progbar222"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:text="High"
+            android:textSize="14sp"
+            android:textColor="@color/blue_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar122"
+            />
+
+        <ProgressBar
+            android:id="@+id/progbar222"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:min="40"
+            android:progress="80"
+            android:progressBackgroundTint="@color/blue_solar_detail"
+            android:progressDrawable="@drawable/seekbar_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progbar122"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/progbar322"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView3221"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:text="Normal"
+            android:textSize="14sp"
+            android:textColor="@color/green_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar222"
+           />
+
+        <ProgressBar
+            android:id="@+id/progbar322"
+
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+
+            android:max="100"
+            android:min="32"
+            android:progress="64"
+
+            android:progressBackgroundTint="@color/green_solar_detail"
+            android:progressDrawable="@drawable/seekbar_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progbar222"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView311"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:text="low"
+            android:textSize="14sp"
+            android:textColor="@color/yellow_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar322"
+            />
+
+        <SeekBar
+            android:id="@+id/customSeekBar22"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:forceHasOverlappingRendering="true"
+            android:max="100"
+            android:maxHeight="6dp"
+            android:min="0"
+            android:minHeight="5dp"
+            android:progress="50"
+            android:progressBackgroundTint="@color/transparent"
+            android:progressDrawable="@color/transparent"
+
+
+            android:splitTrack="false"
+            android:thumb="@drawable/ic_progress_bar"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView344"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="start"
+
+            android:layout_marginBottom="20dp"
+            android:text="percentage"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout22"
+            app:layout_constraintRight_toRightOf="@+id/constraintLayout22"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout22" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout22"
+        app:layout_constraintTop_toTopOf="@+id/textView322" />
+
+    <TextView
+        android:id="@+id/textView222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout22"
+        app:layout_constraintTop_toTopOf="@+id/textView322" />
+
+    <TextView
+        android:id="@+id/textView322"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:text="50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView222"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout22" />
+
+
+    <TextView
+        android:id="@+id/LastYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Year"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView322" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2233"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/textView222">
+
+        <ProgressBar
+            android:id="@+id/progbar1221"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:min="50"
+            android:progress="100"
+            android:progressBackgroundTint="@color/blue_solar_detail"
+            android:progressDrawable="@drawable/seekbar_blue1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/progbar2221"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="High"
+            android:textSize="14sp"
+            android:textColor="@color/blue_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2233"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar1221"
+              />
+
+        <ProgressBar
+            android:id="@+id/progbar2221"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:min="40"
+            android:progress="80"
+            android:progressBackgroundTint="@color/blue_solar_detail"
+            android:progressDrawable="@drawable/seekbar_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progbar1221"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/progbar3221"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView32222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Normal"
+            android:textSize="14sp"
+            android:textColor="@color/green_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2233"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar2221"
+              />
+
+        <ProgressBar
+            android:id="@+id/progbar3221"
+
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:indeterminateBehavior="repeat"
+
+
+            android:max="100"
+            android:min="32"
+            android:progress="64"
+
+            android:progressBackgroundTint="@color/green_solar_detail"
+            android:progressDrawable="@drawable/seekbar_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progbar2221"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView33333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Low"
+            android:textSize="14sp"
+            android:textColor="@color/yellow_solar_detail"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2233"
+            app:layout_constraintLeft_toLeftOf="@+id/progbar3221"
+             />
+
+        <SeekBar
+            android:id="@+id/customSeekBar223"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:forceHasOverlappingRendering="true"
+            android:max="100"
+            android:maxHeight="6dp"
+            android:min="0"
+            android:minHeight="5dp"
+            android:progress="50"
+            android:progressBackgroundTint="@color/transparent"
+            android:progressDrawable="@color/transparent"
+
+
+            android:splitTrack="false"
+            android:thumb="@drawable/ic_progress_bar"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+            android:text="percentage"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2233"
+            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout2233"
+            app:layout_constraintRight_toRightOf="@+id/constraintLayout2233" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2233"
+        app:layout_constraintTop_toTopOf="@+id/textView3223" />
+
+    <TextView
+        android:id="@+id/textView2223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2233"
+        app:layout_constraintTop_toTopOf="@+id/textView3223" />
+
+    <TextView
+        android:id="@+id/textView3223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:text="50"
+
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/textView2223"
+        app:layout_constraintStart_toEndOf="@+id/textView223"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2233" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+principle of java is WORA write once run anywhere.
+
+[JRE, JDK,JVM]
+JVM====Java Virtual Machine, or JVM, loads, verifies and executes Java bytecode.
+
+
+Java Runtime Environment, or JRE, is a set of software tools responsible for execution of the Java program or application on your system.If a programmer would like to execute a Java program using the Java command, they should install JRE. If they are only installing (and not developing or compiling code), then only JRE is needed.
+
+JDK contains all the tools required to compile, debug and run a program developed using the Java platform. (It’s worth noting that Java programs can also be run using command line.
+JDK includes all the Java tools, executables and binaries needed to run Java programs. This includes JRE, a compiler, a debugger, an archiver and other tools that are used in Java development.
+
+JVM IS PART OF JRE
+JRE IS PART OF JDK
+
+IT MEANS THAT JDK IS PARENT AND AND JRE IS CHILD AND JVM IS CHILD OF JRE.
+
+JVM PROVIDES A VIRTUAL MACHINE FOR THE PROGRAM TO LOAD.
+JRE PROVIDES THE ENVIRONMENT TO EXECUTE THE VIRTUAL MACHINE 
+
+
+JVM
+ |
+JRE
+ |
+JDK

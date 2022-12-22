@@ -1,0 +1,235 @@
+onqureshi95@gmail.com
+12345678uY
+
+(device registration)
+https://sapi.skyelectric.com/api/graphiql
+https://sapp.skyelectric.com/auth
+
+osama.ali@skyelectric.com
+House#123
+
+cj.new01@yopmail.com
+Test1234
+
+
+https://skyelectric--devzee.lightning.force.com/lightning/r/Order/8010l000000blL5AAI/view
+osama.ali@skyelectric.com.devzee
+House#438
+
+cj.h7@yopmail.com             visit alignment
+Test1234 
+
+cj.h4@yopmail.com //inprogress all green on survey and design
+Test1234    ------project design and approval
+
+
+
+haider.qadir@skyelectric.com
+
+Oppid_x1@yopmail.com //all grey
+Test1234
+
+
+{
+		Notification on TrackOrder
+		oppid@yopmail.com
+		Test1234
+
+}
+	
+{
+		Site UnderConstruction
+		and.se13@yopmail.com
+		Test1234
+}
+
+{
+		Bank Financing
+		and.se10@yopmail.com
+		Test1234
+}
+
+
+cj.h4@yopmail.com
+Test1234
+
+
+cj.h11@yopmail.com | Test1234
+cj.h5@yopmail.com    | Test1234
+	
+
+grid config
+alert
+
+
+
+seuser03@yopmail.com
+
+https://haiderqadirse@bitbucket.org/skyelectric/smartapp_android.git
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDkyMjExMDYsInJvbGUiOiJDVVNUT01FUiIsInN1YiI6IjIyZGJmNmE5LTQ2OGEtNGVkMi04YzAyLWU2OTE5Y2VjNWY5ZCIsInR6IjowLCJ1dCI6MH0.XjjdzxwRRckvbyTZOMbOIW-kWgcXYXJT5MvZozaYstbu7mRcUjz3TT5BIvJLBS0dG8_jf-K7qqpq86mD2JBpew
+
+xyz.se-2@yopmail.com // systemcommissioning stage
+Test1234
+
+and.se11@yopmail.com
+and.se10@yopmail.com
+
+ 
+and.se10@yopmail.com   ////just 1st stage in progress all other are grey
+Test1234
+
+se.cj04@yopmail.com  // visit alignmaent //  0060l00000PSPuvAAH
+ 
+
+test@xxyyzz.com
+se.cj03@yopmail.com   // no system found dialog
+cjmarch1@yopmail.com // 0060l00000PSQKTAA5
+Asdf1234
+
+test1234random@gmail.com
+
+testuser0011@ymail.com
+
+12345678uY
+
+testlead03@yopmail.com
+Test1234
+
+haider.qadir@skyelectric.com
+boolean 
+
+
+0060l00000NpFBrAAN
+
+
+track order
+testing_random_test@gmail.com
+12345678uY
+svn
+
+
+0060l00000ODtH6
+cj6@yopmail.com
+Test1234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+finalleads02@yopmail.com
+Test1234
+
+
+
+
+
+seuser02@yopmail.com
+Test1234
+seuser01@yopmail.com
+Test1234
+
+
+
+testopp01@yopmail.com
+
+
+opp02@ymail.com
+Test1234
+
+
+testopp01@yopmail.com
+Test1234
+
+
+
+
+ssa@yopmail.com
+Test1234
+
+
+sa.01@yopmail.com
+Test1234
+
+se-08@yopmail.com
+Test1234
+
+
+
+finalleads04@yopmail.com
+Test1234
+
+
+finalleads03@yopmail.com
+Test1234
+
+
+finalleads02@yopmail.com
+Test1234
+
+
+finalleads01@yopmail.com
+Test@1234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+customer account id filed
+
+remove city from apis
+
+
+
+
+
+
+
+
+
